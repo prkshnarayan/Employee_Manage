@@ -3,7 +3,7 @@
 A modern, modular, browser-based Employee Management System built with vanilla HTML, CSS, Bootstrap, and JavaScript. This application allows an admin to manage employee records with full CRUD operations, all without a backend server, demonstrating a clean, service-oriented architecture.
 
 <p align="center">
-  <img src="https://d11ldeo2m6pbdo.cloudfront.net/d36a14a3-a39c-4a0d-80d6-ffb9af199104-Screenshot-2026-03-11-140316.png" alt="Employee Management System Dashboard" width="600"/>
+  <img src="https://drive.google.com/file/d/13nTdGZBdCOVBgqGqHi5VTk5uwpb_OhDv/view?usp=drive_link" alt="Employee Management System Dashboard" width="600"/>
 </p>
 
 <p align="center">
@@ -103,99 +103,7 @@ text
 
 </div>
 
-## 🚀 Installation
-
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Node.js (optional, only required to run unit tests)
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/employee-management-system.git
-
-# Navigate to project directory
-cd employee-management-system
-
-# Open with live server (using npx)
-npx live-server
-
-# OR using Python
-python -m http.server 8000
-
-# OR simply open index.html in your browser
-📖 Usage Guide
-1. Admin Signup 🔐
-javascript
-// Navigate to Signup page
-// Enter a unique username (e.g., "admin")
-// Enter password (min. 6 characters)
-// Confirm password
-// On success, redirect to Login page with toast notification
-2. Admin Login 🔑
-javascript
-// Enter registered username and password
-// On successful login, session flag is set
-// Redirect to Dashboard view
-3. View Dashboard 📊
-javascript
-// Dashboard displays:
-// - Total, Active, and Inactive employee counts
-// - Department-wise employee distribution (Engineering, Marketing, HR, Finance, Operations)
-// - List of 5 most recently added employees
-// All data updates in real-time as employees are added/modified
-4. Manage Employees ✏️
-javascript
-// Navigate to Employees section
-// View complete employee list with ID, Name, Email, Department, Designation, Salary, Join Date, Status
-// 
-// SEARCH: Type in search box to filter by name or email
-// FILTER: Use department dropdown and Active/Inactive toggle
-// SORT: Click column headers (Name, Salary, Join Date) to sort
-//
-// ADD: Click "Add Employee" button → Fill modal form → Save
-// VIEW: Click eye icon to see employee details in read-only modal
-// EDIT: Click pencil icon → Modify information in modal → Save
-// DELETE: Click trash icon → Confirm deletion → Employee removed
-5. Logout 🚪
-javascript
-// Click "Logout" button in navigation bar
-// Session flag cleared
-// Redirect to Login page
-🧪 Testing
-The project includes comprehensive unit tests using Jest to verify the core business logic.
-
-Test Coverage
-Service	Tests
-authService	Signup validation, duplicate username, login validation, session management
-employeeService	Add, edit, delete, get by ID, search, filter, sort operations
-dashboardService	Statistics calculation, department distribution, recent employees
-Run Tests
-bash
-# Install dependencies
-npm install
-
-# Run all tests
-npm test
-
-# Run tests with coverage
-npm test -- --coverage
-📊 Employee Data Model
-<div align="center">
-Field	Type	Description	Example
-id	Number	Auto-incremented identifier	1
-firstName	String	Employee's first name	"Priya"
-lastName	String	Employee's last name	"Menon"
-email	String	Unique work email	"priya.menon@XYZ.com"
-phone	String	10-digit contact number	"9876543210"
-department	String	Engineering, Marketing, HR, Finance, Operations	"Engineering"
-designation	String	Job title	"Software Engineer"
-salary	Number	Annual salary (positive number)	750000
-joinDate	String	Date of joining (YYYY-MM-DD)	"2022-06-15"
-status	String	'Active' or 'Inactive'	"Active"
-</div>
-🎯 Validation Rules
+## 🎯 Validation Rules
 Signup Form
 javascript
 - All fields required
@@ -211,16 +119,7 @@ javascript
 - Join Date cannot be future date
 - Department must be from predefined list
 - Status must be 'Active' or 'Inactive'
-📸 Screenshots
-<div align="center">
-🖥️ Application Views
-Signup Page	Login Page	Dashboard
-<img src="https://d11ldeo2m6pbdo.cloudfront.net/9ab1f8d6-9f7e-4cf8-887f-a69a86a598e8-Screenshot-2026-03-11-140349.png" width="300" alt="Signup Page">	<img src="https://d11ldeo2m6pbdo.cloudfront.net/9dbcdf5a-22b7-4f8c-86d6-6c2ca00928cb-Screenshot-2026-03-11-140330.png" width="300" alt="Login Page">	<img src="https://d11ldeo2m6pbdo.cloudfront.net/d36a14a3-a39c-4a0d-80d6-ffb9af199104-Screenshot-2026-03-11-140316.png" width="300" alt="Dashboard">
-Employee List	Add Employee	Edit Employee
-<img src="https://d11ldeo2m6pbdo.cloudfront.net/302c0d7e-5bfa-4f1c-92fc-1d365c92e203-Screenshot-2026-03-11-140302.png" width="300" alt="Employee List">	<img src="https://d11ldeo2m6pbdo.cloudfront.net/6b150477-90ab-4d05-ad0d-8a300a8e42ae-Screenshot-2026-03-11-140243.png" width="300" alt="Add Employee">	<img src="https://d11ldeo2m6pbdo.cloudfront.net/a084f108-d8ce-4a0b-8d81-edd96b7608dd-Screenshot-2026-03-11-140215.png" width="300" alt="Edit Employee">
-View Employee	Delete Confirmation
-<img src="https://d11ldeo2m6pbdo.cloudfront.net/78ca4f57-4051-49a2-b3d3-e3f3da7eef34-Screenshot-2026-03-11-140229.png" width="300" alt="View Employee">	<img src="https://d11ldeo2m6pbdo.cloudfront.net/4d872b4a-3982-4ebb-8b2d-a3677652f7d9-Screenshot-2026-03-11-140150.png" width="300" alt="Delete Confirmation">
-</div>
+
 📈 Evaluation Criteria
 <div align="center">
 Dimension	Focus	Marks
@@ -230,47 +129,6 @@ Code Architecture	Modular services, clean separation of concerns	20
 Testing & Edge Cases	Unit tests pass, validation correct	15
 Total		100
 </div>
-🔧 Future Enhancements
-Backend Integration - Replace hardcoded data with .NET Core Web API
 
-JWT Authentication - Implement token-based authentication
-
-SQL Server Database - Persist data across sessions
-
-Advanced Reporting - Generate employee reports and analytics charts
-
-Role-Based Access - Different permissions for HR, Managers, and Admins
-
-Export Functionality - Export employee list to Excel/PDF
-
-Bulk Operations - Import employees via CSV
-
-🤝 Contributing
-Fork the repository
-
-Create feature branch (git checkout -b feature/AmazingFeature)
-
-Commit changes (git commit -m 'Add AmazingFeature')
-
-Push to branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👥 Authors
-Your Name - Initial work - GitHub
-
-<div align="center">
-📞 Contact
-https://img.shields.io/badge/Email-your.email%2540example.com-red?style=for-the-badge&logo=gmail
-https://img.shields.io/badge/Portfolio-Your-Portfolio-blue?style=for-the-badge&logo=google-chrome
-https://img.shields.io/badge/GitHub-Employee--Management--System-black?style=for-the-badge&logo=github
-
-</div>
-<div align="center">
-⭐ Star this repository if you find it helpful!
-Happy Coding! 🚀
 
 </div> ```
