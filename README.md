@@ -3,7 +3,7 @@
 A modern, modular, browser-based Employee Management System built with vanilla HTML, CSS, Bootstrap, and JavaScript. This application allows an admin to manage employee records with full CRUD operations, all without a backend server, demonstrating a clean, service-oriented architecture.
 
 <p align="center">
-  <img src="https://drive.google.com/file/d/13nTdGZBdCOVBgqGqHi5VTk5uwpb_OhDv/view?usp=drive_link" alt="Employee Management System Dashboard" width="600"/>
+  <img src="https://drive.google.com/file/d/13nTdGZBdCOVBgqGqHi5VTk5uwpb_OhDv/view?usp=sharing" alt="Employee Management System Dashboard" width="600"/>
 </p>
 
 <p align="center">
