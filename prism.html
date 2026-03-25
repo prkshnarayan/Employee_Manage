@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Prism - AI driven, full stack digital learning experience platform</title>
+    <base href="https://prism.knowledgehut.com/">
+    <link rel="icon" type="image/x-icon" href="https://prism.knowledgehut.com/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f4f8;
+            color: #1a2639;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        /* Main content - full width, no sidebars */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .content-body {
+            padding: 3rem;
+        }
+
+        /* Typography */
+        .problem-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0A2A44;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0A2A44;
+            margin: 2.5rem 0 1.5rem;
+            border-left: 6px solid #1e6df2;
+            padding-left: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a334b;
+            margin: 2.5rem 0 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #253c5c;
+            margin: 2rem 0 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2f4858;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p, li {
+            color: #2a3b4e;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        strong {
+            color: #0A2A44;
+            font-weight: 600;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 20px;
+            border: 1px solid #e2eaf2;
+            background: #fafdff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: #0A2A44;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 1.2rem;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid #dee8f0;
+            color: #1e3349;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) td {
+            background: #f6faff;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: #0b1e2f;
+            color: #e2eaf2;
+            padding: 1.5rem;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .code-block div {
+            white-space: nowrap;
+        }
+
+        /* Images */
+        .content-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid #d9e5f0;
+            box-shadow: 0 10px 25px -10px rgba(0,30,70,0.15);
+            margin: 2rem 0;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            .content-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="content-body">
+            <div class="problem-title">📋 Problem Statement: Employee Management System</div>
+
+            <h1>Mini Project 1: Employee Management System</h1>
+            <h2>1. Overview</h2>
+            <p>Employee Management System is your first step in a two-part mini project series. In this project you will design and build a browser-based Employee Management System using only frontend technologies. All employee data is stored as a hardcoded JavaScript array of objects — no backend, no database, and no frontend frameworks are permitted.</p>
+            <p>What makes this project different from a typical beginner task is its emphasis on modular architecture. Rather than placing all logic in a single app.js file, the codebase is split across purpose-built service modules — mirroring how real-world frontend projects are structured. Each service has a single responsibility, making the code easier to read, test, and maintain.</p>
+            <p>In subsequent mini project, the static data layer will be replaced by a .NET Core Web API backed by SQL Server, and in-memory authentication will be upgraded to JWT-based login. The modular structure you build now makes that transition straightforward — swapping the data source requires changes to only one service file.</p>
+
+            <h2>2. Problem Statement</h2>
+            <h3>Background</h3>
+            <p>XYZ Solutions, a technology services company, currently manages employee records manually using spreadsheets. This approach causes data inconsistency, difficulty in tracking employee details, and a lack of centralised visibility for the HR team.</p>
+            <p>The company now requires a modern, responsive, browser-based Employee Management System that:</p>
+            <ul>
+                <li>Allows an Admin to securely Sign Up and Login</li>
+                <li>Displays workforce insights through a real-time summary dashboard</li>
+                <li>Supports adding, editing, deleting, searching, filtering, and sorting employee records</li>
+                <li>Works entirely on the frontend without page reloads</li>
+                <li>Is built with a modular, service-oriented JavaScript architecture</li>
+            </ul>
+
+            <h3>Your Task</h3>
+            <p>Design and develop a responsive Employee Management System using HTML5, CSS3, Bootstrap 5, JavaScript (ES6+), and jQuery 3.x. The application must include:</p>
+            <ul>
+                <li>Admin Signup Page</li>
+                <li>Admin Login Page</li>
+                <li>Dashboard View — summary cards, department breakdown, recent employees</li>
+                <li>Employee List View — with search, filter, and sort</li>
+                <li>Complete CRUD Operations — Add, View, Edit, Delete</li>
+            </ul>
+            <p>All employee data must be stored in data.js as a JavaScript array of objects. All UI updates must be handled dynamically using DOM manipulation — no full-page reloads. Application logic must be distributed across the designated service modules described in Section 7.</p>
+
+            <h3>Technology Constraints</h3>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Constraint</th><th>Rule</th></tr></thead>
+                    <tbody>
+                        <tr><td>Frontend Frameworks</td><td>React, Angular, Vue — NOT permitted</td></tr>
+                        <tr><td>Backend / API Calls</td><td>Not permitted — no fetch / XMLHttpRequest to any server</td></tr>
+                        <tr><td>Database</td><td>Not permitted — data lives in data.js only</td></tr>
+                        <tr><td>localStorage / sessionStorage</td><td>Not required — in-memory state (JS variables/objects) is sufficient but can be optional</td></tr>
+                        <tr><td>Monolithic JS</td><td>All logic must be distributed across service modules — not placed in one file</td></tr>
+                        <tr><td>Inline JavaScript</td><td>No onclick='...' or &lt;script&gt; blocks inside HTML files — all JS lives in js/ files</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>3. Admin Authentication Module</h2>
+            <p>The application must begin with an authentication flow before any HR data is accessible. Authentication is simulated entirely in-memory. The authService.js module owns all authentication logic.</p>
+            
+            <h3>3.1 Admin Signup</h3>
+            <p>The Signup page must allow an Admin to register with the following fields: Username, Password, Confirm Password.</p>
+            <!-- Signup page image -->
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/9ab1f8d6-9f7e-4cf8-887f-a69a86a598e8-Screenshot-2026-03-11-140349.png" class="content-image" alt="Admin Signup Page Screenshot" loading="lazy">
+
+            <h4>Validation Rules (handled by validationService.js)</h4>
+            <ul>
+                <li>All three fields are required — empty submission must show field-level error messages</li>
+                <li>Password must be a minimum of 6 characters</li>
+                <li>Password and Confirm Password must match exactly</li>
+                <li>Username must be unique — duplicate signup must be rejected with a specific error message</li>
+            </ul>
+            <h4>On Successful Signup</h4>
+            <ul>
+                <li>authService.js stores the admin credentials as an object in memory (seeded via data.js)</li>
+                <li>User is redirected to the Login page</li>
+                <li>A Bootstrap Toast success notification is shown before redirect</li>
+            </ul>
+
+            <h3>3.2 Admin Login</h3>
+            <p>The Login page must authenticate the Admin using: Username, Password.</p>
+            <!-- Login page image -->
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/9dbcdf5a-22b7-4f8c-86d6-6c2ca00928cb-Screenshot-2026-03-11-140330.png" class="content-image" alt="Admin Login Page Screenshot" loading="lazy">
+
+            <h4>Validation Rules</h4>
+            <ul>
+                <li>Both fields are required</li>
+                <li>Credentials must exactly match the data stored by authService.js</li>
+                <li>An error message must be shown for invalid credentials — do not reveal which field is incorrect</li>
+            </ul>
+            <h4>On Successful Login</h4>
+            <ul>
+                <li>authService.js sets an in-memory session flag to indicate the user is authenticated</li>
+                <li>User is redirected to the Dashboard (dashboard section in index.html)</li>
+                <li>Accessing the dashboard section without a valid session redirects back to the login view</li>
+            </ul>
+
+            <h2>4. Employee Data Model</h2>
+            <p>All employee records are declared in data.js as a JavaScript array of objects. storageService.js provides the in-memory read/write interface over this array so that no other module accesses the raw data array directly.</p>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+                    <tbody>
+                        <tr><td>id</td><td>Number</td><td>Unique auto-incremented identifier (e.g., 1,2,3…)</td></tr>
+                        <tr><td>firstName</td><td>String</td><td>Employee's first name (e.g., 'Priya')</td></tr>
+                        <tr><td>lastName</td><td>String</td><td>Employee's last name (e.g., 'Menon')</td></tr>
+                        <tr><td>email</td><td>String</td><td>Unique work email address (e.g., 'priya.menon@XYZ.com')</td></tr>
+                        <tr><td>phone</td><td>String</td><td>10-digit contact number (e.g., '9876543210')</td></tr>
+                        <tr><td>department</td><td>String</td><td>One of: Engineering | Marketing | HR | Finance | Operations</td></tr>
+                        <tr><td>designation</td><td>String</td><td>Job title (e.g., 'Software Engineer', 'HR Executive')</td></tr>
+                        <tr><td>salary</td><td>Number</td><td>Annual salary as a positive number (e.g., 750000)</td></tr>
+                        <tr><td>joinDate</td><td>String</td><td>Date of joining in YYYY-MM-DD format (e.g., '2022-06-15')</td></tr>
+                        <tr><td>status</td><td>String</td><td>'Active' or 'Inactive'</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Dataset Requirement:</strong> A minimum of 15 employees must be preloaded in data.js, distributed across all five departments with a mix of Active and Inactive statuses.</p>
+
+            <h2>5. Core Features to Implement</h2>
+            <h3>5.1 Dashboard View</h3>
+            <p>The Dashboard is the default landing page after login and is managed by dashboardService.js. It must display summary cards (Total, Active, Inactive, Departments), department-wise employee count, and a recent employees panel (last 5 added).</p>
+            <!-- Dashboard view image -->
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/d36a14a3-a39c-4a0d-80d6-ffb9af199104-Screenshot-2026-03-11-140316.png" class="content-image" alt="Dashboard View Screenshot" loading="lazy">
+
+            <h3>5.2 Employee List View</h3>
+            <p>A dedicated section displaying all employees in a structured table with columns: ID, Full Name, Email, Department, Designation, Salary (formatted as ₹X,XX,XXX), Join Date, Status, Actions (View, Edit, Delete).</p>
+            <!-- Employee list image -->
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/302c0d7e-5bfa-4f1c-92fc-1d365c92e203-Screenshot-2026-03-11-140302.png" class="content-image" alt="Employee List View Screenshot" loading="lazy">
+
+            <h3>5.3 Search and Filtering</h3>
+            <ul><li>Real-time search by name/email · Department dropdown · Status toggle (All/Active/Inactive) · AND logic</li></ul>
+
+            <h3>5.4 Sorting</h3>
+            <ul><li>Sort by Name, Salary, Join Date in both directions, combined with active filters.</li></ul>
+
+            <h3>5.5 CRUD Operations</h3>
+            <ul>
+                <li><strong>Create:</strong> 'Add Employee' button opens a Bootstrap Modal with form validation (validationService.js). On success, employeeService adds via storageService, UI refreshes, toast shown.</li>
+                <li><strong>Read:</strong> View button opens read-only modal with employee details.</li>
+                <li><strong>Update:</strong> Edit button pre-populates modal; changes saved via employeeService.</li>
+                <li><strong>Delete:</strong> Confirmation modal; removal via employeeService.</li>
+            </ul>
+            <!-- CRUD operation images -->
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/6b150477-90ab-4d05-ad0d-8a300a8e42ae-Screenshot-2026-03-11-140243.png" class="content-image" alt="Add Employee Modal Screenshot" loading="lazy">
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/78ca4f57-4051-49a2-b3d3-e3f3da7eef34-Screenshot-2026-03-11-140229.png" class="content-image" alt="View Employee Modal Screenshot" loading="lazy">
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/a084f108-d8ce-4a0b-8d81-edd96b7608dd-Screenshot-2026-03-11-140215.png" class="content-image" alt="Edit Employee Modal Screenshot" loading="lazy">
+            <img src="https://d11ldeo2m6pbdo.cloudfront.net/4d872b4a-3982-4ebb-8b2d-a3677652f7d9-Screenshot-2026-03-11-140150.png" class="content-image" alt="Delete Confirmation Modal Screenshot" loading="lazy">
+
+            <h2>6. Navigation &amp; Layout</h2>
+            <ul>
+                <li>Fixed-top Bootstrap Navbar with app name, navigation links (Dashboard, Employees), 'Add Employee' button, and Logout.</li>
+                <li>Responsive: collapses on mobile.</li>
+                <li>Dashboard and Employee List sections coexist in index.html; toggled via jQuery.</li>
+            </ul>
+
+            <h2>7. Project File Structure</h2>
+            <div class="code-block">
+                <div>employee-management-dashboard/</div>
+                <div>├── index.html</div>
+                <div>├── css/</div>
+                <div>│   └── styles.css</div>
+                <div>├── js/</div>
+                <div>│   ├── data.js</div>
+                <div>│   ├── storageService.js</div>
+                <div>│   ├── authService.js</div>
+                <div>│   ├── employeeService.js</div>
+                <div>│   ├── validationService.js</div>
+                <div>│   ├── dashboardService.js</div>
+                <div>│   ├── uiService.js</div>
+                <div>│   └── app.js</div>
+                <div>├── tests/</div>
+                <div>│   ├── employeeService.test.js</div>
+                <div>│   ├── authService.test.js</div>
+                <div>│   └── dashboardService.test.js</div>
+                <div>├── package.json</div>
+                <div>└── jest.config.js</div>
+            </div>
+
+            <h2>8. Evaluation Criteria [100 Marks]</h2>
+            <div class="table-container">
+                <table>
+                    <thead><tr><th>Dimension</th><th>Focus</th><th>Marks</th></tr></thead>
+                    <tbody>
+                        <tr><td>Functional Requirements</td><td>All features work correctly end to end</td><td>40</td></tr>
+                        <tr><td>UI/UX Design</td><td>Responsive, consistent, user-friendly interface</td><td>25</td></tr>
+                        <tr><td>Code Architecture</td><td>Modular services, clean separation</td><td>20</td></tr>
+                        <tr><td>Testing & Edge Cases</td><td>Unit tests pass, validation correct</td><td>15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>9. Deliverables &amp; Submission</h2>
+            <p>Submit a ZIP folder named: <strong>Employee Management System _[Your Full Name]</strong> containing the full project structure as described in Section 7, including a README.txt with your name, batch, run instructions, and test instructions.</p>
+            <p><strong>Submission Rules:</strong> The app must run by opening index.html directly in a browser (no build step). Tests must run via npm install followed by npm test in the project root. Both must work without any modifications after unzipping.</p>
+        </div>
+    </div>
+</body>
+</html>
