@@ -2,8 +2,9 @@
 
 A modern, modular, browser-based Employee Management System built with vanilla HTML, CSS, Bootstrap, and JavaScript. This application allows an admin to manage employee records with full CRUD operations, all without a backend server, demonstrating a clean, service-oriented architecture.
 
+
 <p align="center">
-  <img src="https://drive.google.com/file/d/13nTdGZBdCOVBgqGqHi5VTk5uwpb_OhDv/view?usp=sharing" alt="Employee Management System Dashboard" width="600"/>
+  <img src="https://drive.google.com/uc?export=view&id=13nTdGZBdCOVBgqGqHi5VTk5uwpb_OhDv" alt="Employee Management System Dashboard" width="600"/>
 </p>
 
 <p align="center">
@@ -74,10 +75,6 @@ employee-management-dashboard/
 │   ├── dashboardService.js     # Dashboard statistics calculation
 │   ├── uiService.js            # DOM manipulation and UI updates
 │   └── app.js                  # Main application initializer
-├── tests/
-│   ├── employeeService.test.js
-│   ├── authService.test.js
-│   └── dashboardService.test.js
 ├── package.json                # For running unit tests
 ├── jest.config.js              # Jest configuration
 └── README.md                   # Project documentation
