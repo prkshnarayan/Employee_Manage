@@ -21,7 +21,7 @@ A modern, modular, browser-based Employee Management System built with vanilla H
 ## 📌 Demo
 
 Experience the live demo of the project here:  
-👉 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://your-username.github.io/employee-management-system/)
+👉 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://prkshnarayan.github.io/Employee_Manage/)
 
 ---
 
@@ -62,32 +62,27 @@ Experience the live demo of the project here:
 
 ## 📁 Project Structure
 employee-management-dashboard/
-│
-├── 📄 index.html # Main application file (contains all views)
-│
-├── 📁 css/
-│ └── 📄 styles.css # Custom styles and overrides
-│
-├── 📁 js/
-│ ├── 📄 data.js # Hardcoded employee (15+ records) and admin data
-│ ├── 📄 storageService.js # In-memory read/write interface for data
-│ ├── 📄 authService.js # Admin signup/login logic
-│ ├── 📄 employeeService.js # Business logic for employee CRUD
-│ ├── 📄 validationService.js# Form validation rules
-│ ├── 📄 dashboardService.js # Dashboard statistics calculation
-│ ├── 📄 uiService.js # DOM manipulation and UI updates
-│ └── 📄 app.js # Main application initializer
-│
-├── 📁 tests/
-│ ├── 📄 employeeService.test.js
-│ ├── 📄 authService.test.js
-│ └── 📄 dashboardService.test.js
-│
-├── 📄 package.json # For running unit tests
-├── 📄 jest.config.js # Jest configuration
-└── 📄 README.md # Project documentation
+├── index.html                  # Main application file (contains all views)
+├── css/
+│   └── styles.css              # Custom styles and overrides
+├── js/
+│   ├── data.js                 # Hardcoded employee (15+ records) and admin data
+│   ├── storageService.js       # In-memory read/write interface for data
+│   ├── authService.js          # Admin signup/login logic
+│   ├── employeeService.js      # Business logic for employee CRUD
+│   ├── validationService.js    # Form validation rules
+│   ├── dashboardService.js     # Dashboard statistics calculation
+│   ├── uiService.js            # DOM manipulation and UI updates
+│   └── app.js                  # Main application initializer
+├── tests/
+│   ├── employeeService.test.js
+│   ├── authService.test.js
+│   └── dashboardService.test.js
+├── package.json                # For running unit tests
+├── jest.config.js              # Jest configuration
+└── README.md                   # Project documentation
 
-text
+
 
 ## 📄 Pages Overview
 
@@ -119,16 +114,3 @@ javascript
 - Join Date cannot be future date
 - Department must be from predefined list
 - Status must be 'Active' or 'Inactive'
-
-📈 Evaluation Criteria
-<div align="center">
-Dimension	Focus	Marks
-Functional Requirements	All features work correctly end to end	40
-UI/UX Design	Responsive, consistent, user-friendly interface	25
-Code Architecture	Modular services, clean separation of concerns	20
-Testing & Edge Cases	Unit tests pass, validation correct	15
-Total		100
-</div>
-
-
-</div> ```
